@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <h1 id="title">CodingStars CSS Bootcamp Registration Form</h1>
+                <p id="description">You can join our bootcamp for free.</p>
+            </header>
+
+            <form action="#" id="survey-from">
+
+                <div >
+                    <div class="dd">
+                        <label id="name-label" for="name" >Full name: </label>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        class="form-item aa" 
+                        placeholder=" enter your name" 
+                        required 
+                        >
+                    </div>
+                    <div class="dd">   
+                        <label id="email-label" for="email" >Email:  </label>
+                        <input 
+                        type="email" 
+                        id="email"
+                        class="form-item aa" 
+                        placeholder="enter your email" 
+                        required 
+                        >
+                    </div> 
+                    <div class="dd">   
+                        <label id="number-label" for="number" >Age: </label>
+                        <input 
+                        type="number" 
+                        id="number" 
+                        class="form-item aa"
+                        placeholder="age" 
+                        min="14" 
+                        max="120" 
+                        >
+                    </div>     
+                </div>
+
+                <div class="dd">
+                    <label>What is your current education status?</label>
+                    <select id="dropdown" class="form-item aa" >
+                        <option value="">your status</option>
+                        <option value="option one">High school student</option>
+                        <option value="option two">University student</option>
+                        <option value="option three">Graduate</option>
+                    </select>
+                </div>
+
+                <div class="dd">
+                    <p>What is your CSS knowledge?</p>
+                    <div class="together">
+                        <input 
+                        type="radio" 
+                        id="r1"
+                        value="radio one" 
+                        name="radio" 
+                        checked
+                        >
+                        <label for="r1" class="form-item">I don't have any knowledge</label>
+                    </div>
+                    <div class="together">    
+                        <input 
+                        type="radio" 
+                        id="r2"
+                        value="radio two" 
+                        name="radio" 
+                        >
+                        <label for="r2" class="form-item">I can code a little</label>
+                    </div>
+                    <div class="together">    
+                        <input 
+                        type="radio" 
+                        id="r3"
+                        value="radio two" 
+                        name="radio" 
+                        >
+                        <label for="r3" class="form-item">Very well</label>
+                    </div>
+                </div>
+
+                <div class="dd">
+                    <p>On which platforms do you follow us?</p>
+                    <div class="together">
+                        <input 
+                        type="checkbox"
+                        value="Youtube"
+                        id="c1"
+                        > 
+                        <label for="c1" class="form-item">Youtube</label>
+                    </div>
+                    
+                    <div class="together">
+                        <input 
+                        type="checkbox"
+                        value="Instagram"
+                        id="c2"
+                        >
+                        <label for="c2" class="form-item">Instagram</label>
+                    </div>
+
+                    <div class="together">
+                        <input 
+                        type="checkbox"
+                        value="X"
+                        id="c3"
+                        >
+                        <label for="c3" class="form-item">X</label>
+                    </div>
+
+                    <div class="together">
+                        <input 
+                        type="checkbox"
+                        value="LinkedIn"
+                        id="c4"
+                        >
+                        <label for="c4" class="form-item">LinkedIn</label>
+                    </div>
+                </div>
+
+                <div class="dd">
+                    <p>Briefly tell us about your CV.</p>
+                    <textarea
+                        id="comments"
+                        class="form-item aa"
+                        name="comment"
+                        placeholder="Write your resume here..."
+                        >
+                    </textarea>
+                </div>
+
+                <div class="dd">
+                    <input 
+                    type="submit"
+                    id="submit"
+                    class="form-item aa"
+                    value="SUBMIT"
+                    >
+                </div>
+
+            </form>  
+
+        </div>
+    </body>
+</html>
